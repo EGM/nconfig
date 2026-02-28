@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <version>1.0</version>
+    <files>
+        <input>C:\input</input>
+        <output>C:\output</output>
+    </files>
+</config>

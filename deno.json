@@ -1,0 +1,42 @@
+{
+  "name": "@nortex/config",
+  "version": "3.0.0",
+  "description": "A standardized way to parse various configuration files in your project.",
+  "license": "ISC",
+  "exports": {
+    ".": "./lib/mod.ts",
+    "./*": "./lib/*.ts"
+  },
+
+  "tasks": {
+    "dev": "deno run --watch src/index.ts",
+    "build": "deno check src/index.ts",
+    "test": {
+      "command": "deno test --allow-read ",
+      "description": "Run the Deno tests",
+      "type": "shell"
+    }
+  },
+
+  "imports": {
+    "@cross/fs": "jsr:@cross/fs@^0.1.14",
+    "@libs/xml": "jsr:@libs/xml@^7.0.3",
+    "@std/assert": "jsr:@std/assert@^1.0.18",
+    "@std/expect": "jsr:@std/expect@^1.0.17",
+    "@std/ini": "jsr:@std/ini@^0.225.2",
+    "@std/jsonc": "jsr:@std/jsonc@^1.0.2",
+    "@std/path": "jsr:@std/path@^1.1.4",
+    "@std/testing": "jsr:@std/testing@^1.0.17",
+    "@std/toml": "jsr:@std/toml@^1.0.11",
+    "@std/yaml": "jsr:@std/yaml@^1.0.11",
+    "@zod/zod": "jsr:@zod/zod@^4.3.6",
+
+    "@lib": "./lib/mod.ts",
+    "@src": "./src/mod.ts"
+  },
+    "test": {
+    "imports": {
+      "@cross/fs/io": "./tests/shims/fs.ts"
+    }
+  }
+}

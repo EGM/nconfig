@@ -1,0 +1,7 @@
+{
+    "version": "1.0", // Version of the configuration
+    "files": {
+        "input": "C:\\input", // Input directory
+        "output": "C:\\output" // Output directory
+    }
+}

@@ -1,19 +1,27 @@
-## nconfig
+# nconfig
 
 A standardized way to write type-safe, validated configs.
 
-### Supported languages:
+## Supported Config Languages
 
--   json
--   yaml
--   toml
+- `json`, `jsonc`
+- `yaml`, `yml`
+- `toml`
+- `ini`
+- `xml`
 
-### Usage:
+## Usage
 
 You're going to need `zod` for validation, which is a peer dependency of this package.
 
-Install the package with your favorite package manager:
+Install the package with *my* favorite package manager:
 
 ```sh
-$ npm install nconfig
+$ deno install
 ```
+
+## For Additional Infomation
+
+- [Loading and Saving](LoadingAndSaving.md)
+- [Versioning](Versioning.md)
+- [Migration Guide](MigrationGuide.md)
